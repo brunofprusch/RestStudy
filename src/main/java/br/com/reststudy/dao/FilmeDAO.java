@@ -62,4 +62,9 @@ public class FilmeDAO {
 		return FilmeDTO.filmeToFilmeDTO(filme);
 	}
 	
+	public void save(EntityManager em, Filme filme){
+		em.persist(filme);
+		em.flush();
+	}
+	
 }

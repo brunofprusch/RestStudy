@@ -3,8 +3,11 @@ package br.com.reststudy.dto;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 import br.com.reststudy.model.Filme;
 
+@XmlRootElement
 public class FilmeDTO {
 
 	private Long id;
@@ -51,7 +54,6 @@ public class FilmeDTO {
 		
 		return filmeDTO;
 	}
-	
 	
 	
 	public Long getId() {
